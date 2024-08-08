@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> {% block title %}  {% endblock %} </title>
+		<meta charset="utf-8">
+
+		<meta name="author" content="Abdul Akhundzade">
+		<meta name="description" content="My Web Site">
+
+		<link rel="stylesheet" type="text/css" 
+		href = "{{ url_for('static', filename='css/style.css') }}">
+	</head>
+	
+	<body>
+		<main>
+			{% block main_content %}  {% endblock %}
+		</main>
+	</body>	
+</html>

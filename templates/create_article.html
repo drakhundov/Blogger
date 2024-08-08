@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Create Article {% endblock %}
+
+{% block main_content %}
+	<form method="post">
+		<fieldset>
+			<legend> Create Article </legend>
+
+			<input name="title" type="text" id="title"
+			   	   placeholder="Title" > <br>
+
+			<textarea name="text" id="text"
+			          placeholder="Text"></textarea> <br>
+
+			<input name="date" type="date"> <br>
+
+			<button type="submit"> Create Article </button>
+		</fieldset>
+	</form>
+{% endblock %}

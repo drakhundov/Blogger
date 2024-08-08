@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Update {{ article.title }} {% endblock %}
+
+{% block main_content %}
+	<form method="post">
+		<fieldset>
+			<legend> Redact Article </legend>
+
+			<input name="title" type="text" id="title"
+			   placeholder="Title" 
+			   value="{{ article.title }}"> <br>
+
+			<textarea name="text" id="text"
+			          placeholder="Text">{{ article.text }}</textarea> <br>
+
+			<button type="submit"> Save Changes </button>
+		</fieldset>
+	</form>
+{% endblock %}

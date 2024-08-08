@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Last Posts {% endblock %}
+
+{% block main_content %}
+	{% for article in articles %}
+		<div class="article-box">
+			<h1 class="article-title"> 
+				{{ article.title }} </h1> <br>
+
+			<p class="article-text"> 
+			   {{ article.text }} </p>
+
+			<p> <b> Date: {{ article.date.date() }} </b> </p>
+
+			<a class="link" 
+			   href="{{ url_for('post', id=article.id) }}"> 
+			   Detail </a>
+		</div>
+	{% endfor %}
+
+	<a class="link"
+	   href="{{ url_for('create_article') }}">
+	   Create </a>
+{% endblock %}

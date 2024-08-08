@@ -1,0 +1,27 @@
+.link {
+	background-color: gold;
+	color: orangered;
+
+	display: inline-block;
+
+	font-size: 18px;
+    font-style: italic;
+    font-family: serif;
+
+	text-decoration: none;
+	text-align: center;
+
+	padding: 10px;
+	padding-left: 13px;
+	padding-right: 15px;
+	margin: 25px;
+
+	border: 1px solid silver;
+	border-radius: 3px;
+}
+
+.link:hover {
+	background-color: chartreuse;
+	border-width: 3px;
+	border-right-style: dotted;
+}

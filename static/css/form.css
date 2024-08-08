@@ -1,0 +1,27 @@
+input, textarea {
+	margin-left: 25px;
+	margin-bottom: 15px;
+
+	font-size: medium;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic;
+
+	border: 1px solid black;
+	border-radius: 7px;
+	border-right-style: dotted;
+}
+
+button {
+	background-color: yellow;
+
+	margin-left: 25px;
+	margin-bottom: 15px;
+	padding: 10px 5px;
+
+	border: 1px solid tomato;
+	border-radius: 7px;
+}
+
+button:hover {
+	background-color: lime;
+}
